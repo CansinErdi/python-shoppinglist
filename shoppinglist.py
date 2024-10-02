@@ -27,3 +27,30 @@ def show_shoppinglist():
 # For testing
 if __name__ == "__main__":
     show_shoppinglist()
+
+
+    # shoppinglist.py
+
+def main():
+    while True:
+        print("\n----- Shopping List -----")
+        print("1. Add item to the shopping list")
+        print("2. Display shopping list")
+        print("3. Exit the program")
+
+        choice = input("Please select an option (1, 2, or 3): ")
+
+        if choice == '1':
+            add_item()
+        elif choice == '2':
+            show_shoppinglist()
+        elif choice == '3':
+            print("Exiting the program. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select 1, 2, or 3.")
+
+
+if __name__ == "__main__":
+    main()
+
