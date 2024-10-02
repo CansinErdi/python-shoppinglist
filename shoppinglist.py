@@ -14,3 +14,16 @@ def add_item():
 # For testing
 if __name__ == "__main__":
     add_item()
+
+    # Function to display the shopping list
+def show_shoppinglist():
+    if shopping_list:
+        print("Your shopping list:")
+        for item in shopping_list:
+            print(f"- {item}")
+    else:
+        print("Your shopping list is empty.")
+
+# For testing
+if __name__ == "__main__":
+    show_shoppinglist()
